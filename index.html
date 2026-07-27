@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Dango_Rex</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/logo.png">
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+<header class="header">
+	<img class="dr_logo" src="images/logo.png">
+	<h1 class="project_name" id="header-project-name">
+	</h1>
+	<div class="project_short_description" id="header-project-short">
+	</div>
+</header>
+
+<div class="layout">
+    <aside class="left-menu">
+		<div class="menu-button menu-item" data-project="rotu">
+			<div class="menu-bg"></div>
+			<img class="icon" src="images/rotu.png">
+			<div class="popup p-left">
+				RotU
+			</div>
+		</div>
+		<div class="menu-button menu-item" data-project="necrocraft">
+			<div class="menu-bg"></div>
+			<img class="icon" src="images/necrocraft.png">
+			<div class="popup p-left">
+				NecroCraft
+			</div>
+		</div>
+		<div class="menu-button menu-item" data-project="nix">
+			<div class="menu-bg"></div>
+			<img class="icon" src="images/nix.png">
+			<div class="popup p-left">
+				NIX
+			</div>
+		</div>
+		<div class="menu-button menu-item" data-project="yt_dr">
+			<div class="menu-bg"></div>
+			<img class="icon" src="images/yt_dr.png">
+			<div class="popup p-left">
+				Dango_Rex YouTube
+			</div>
+		</div>
+		<div class="menu-button menu-item" data-project="yt_drm">
+			<div class="menu-bg"></div>
+			<img class="icon" src="images/yt_drm.png">
+			<div class="popup p-left">
+				Dango_Rex Minecraft YouTube
+			</div>
+		</div>
+		
+	</aside>
+
+    <main class="content">
+		<div class="content-project">
+			<div class="content-header">
+				<img class="content_logo" id="content-logo">				<!-- лого и название стоят рядом -->
+				<h1 class="content-name" id="content-name">
+				</h1>
+			</div>
+			<div class="content-gallery-window" id="gallery-window">		<!-- блок окна галлереи -->
+				<section class="content-gallery">							<!-- блок с галлереей -->
+					<img class="content_pic1" id="content-pic1">  			<!-- здесь будет карусель, но пока что 1 картинка -->
+				</section>
+				<div class="gallery-roll-window" id="gallery-roll">			<!-- блок переключения галлереи -->
+					<button class="pic-button" id="back-button">
+						<p class="back_button"> ◀ </p>
+					</button >
+					<p class="number-pic" id="number_pic"> </p>
+					<p class="separator-pic" id="separator"> /</p>
+					<p class="quantity-pic" id="quantity_pic"> </p>
+					<button class="pic-button" id="next-button">
+						<p class="next_button"> ▶ </p>
+					</button >
+				</div>
+			</div>
+				<div class="content-description" id="content-description"> 	<!-- ниже описание -->
+					<p class="content-description1" id="content-description1"> 	<!-- несколько блоков в описании -->
+						
+					</p>
+				</div>
+			<section class="content-links">									<!-- ниже ссылки -->
+				<button  class="content-links-block" id="link-block">
+					<img class="link_logo" id="link_logo">
+					<h1 class="link-name" id="link_name"> </h1>
+				</button >
+				<button  class="content-links-block" id="link-discord">
+					<img class="link_logo" id="link_ds_logo">
+					<h1 class="link-name"> Discord </h1>
+				</button >
+			</section>
+		</div>
+	</main>
+
+    <aside class="right-menu">
+		<div class="menu-button menu-setting" id="down-button">
+			<div class="menu-bg"></div>
+			<img class="icon" src="images/download.png">
+			<div class="popup p-right">
+				Скачать
+			</div>
+		</div>
+		<div class="menu-button menu-setting" id="news-button">
+			<div class="menu-bg"></div>
+			<img class="icon" src="images/news.png">
+			<div class="popup p-right" id="news-popup"></div>
+		</div>
+	</aside>
+</div>
+	<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+body{				/* основное тело сайта */
+    margin: 0;		/* отступ от края сайта (сейчас 0) */
+
+    display: flex;	/* вертикальное расположение основы */
+    flex-direction: column;
+	
+	overflow: hidden;
+	
+    height: 100vh;	/* основа высотой 100% окна */
+	font-family: 'Comic Sans MS';
+	background: #330015;
+	color: #FF8800;
+}
+
+/*----------------------------------------------   шапка   ---------------------------------------------------*/
+
+.header{			/* заголовок */
+	display: flex;
+    height: 100px;
+	border-bottom: 3px solid #e32900;
+	background: #ad0000;
+}
+
+.dr_logo{
+	width:100px;
+    height:100px;
+	border-right: 3px solid #e32900;
+}
+
+.project_name{
+	display: flex;
+    align-items: center;
+	width:440px;
+	padding-left: 10px;
+}
+
+.project_short_description{
+	display: flex;
+    align-items: center;
+	flex: 1;
+	padding: 10px;
+}
+
+/*----------------------------------------------   под шапкой   ---------------------------------------------------*/
+
+.layout{			
+    display: flex;	/* горизонтальное расположение layout элементов */
+    flex: 1;		/* автоподбор размера */
+	min-height:0;
+}
+
+/*----------------------------------------------   левое и правое меню   ---------------------------------------------------*/
+
+.left-menu{			/* левое меню */
+    width: 70px;
+}
+
+.right-menu{		/* правое меню */
+    width: 70px;
+}
+
+.menu-button {
+	display: flex;
+    position: relative;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+}
+
+.menu-bg{
+	position:absolute;
+	width: 50px;
+    height: 50px;
+    padding: 9px;
+    border-radius: 10px;
+	background: #890022;
+    border: 1px solid #e32900;
+	z-index: 2;
+}
+
+.icon{				/* иконка */
+	position: relative;
+	height: 50px;
+    width: 50px;
+	padding: 10px;
+	border-radius: 30%;
+	z-index: 3;
+}
+
+.popup{				/* карточка */
+    position:absolute;
+	align-items: center;
+	height: 38px;
+    top: 0;
+	opacity: 0;
+	white-space: nowrap;
+	padding: 15px;
+	z-index: 1;
+	background: #890022;
+    border: 1px solid #e32900;
+	pointer-events: none;
+}
+
+.p-left{				/* карточка */
+    left: 0px;
+	transition: left 0.3s, opacity 0.3s;
+}
+
+.p-right{			/* карточка */
+    right: 0px;
+	transition: right 0.3s, opacity 0.3s;
+}
+
+.menu-item:hover .p-left{	/* показ карточки при наведении на иконку */
+    left: 63px;
+	opacity:1;
+	pointer-events: auto;
+}
+
+.menu-setting:hover .p-right{	/* показ карточки при наведении на иконку */
+    right:63px;
+	opacity:1;
+	pointer-events: auto;
+}
+
+/*----------------------------------------------   рабочее пространство   ---------------------------------------------------*/
+
+.content{			/* основная часть */
+	display: flex;
+	flex: 1;
+	padding: 20px;
+	min-height:0;
+	overflow-y: auto;   /* <-- вертикальная прокрутка */
+    overflow-x: hidden; /* <-- горизонтальную лучше отключить */
+}
+
+.content-project{
+    display: flex;
+	flex: 1;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-header{
+	display: flex;
+    gap: 20px;
+}
+
+.content_logo{
+	width:100px;
+    height:100px;
+	border-radius: 20px;
+}
+
+.content-name{
+	flex: 1;
+}
+
+/*----------------------------------------------   галлерея   ---------------------------------------------------*/
+
+.content-gallery-window{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.content-gallery{
+	display: flex;
+	justify-content: center;
+	width: 80%;
+}
+
+.content_pic1{
+    max-width:100%;
+    max-height:60vh;
+    width:auto;
+    height:auto;
+}
+
+.gallery-roll-window{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.pic-button{
+	height:34px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border-radius: 10px;
+	color: #FF8800;
+	background: #890022;
+    border: 1px solid #e32900;
+}
+
+/*----------------------------------------------   описание   ---------------------------------------------------*/
+
+.content-description{
+	display: flex;
+	flex: 1;
+}
+
+/*----------------------------------------------   ссылки   ---------------------------------------------------*/
+
+.content-links{
+	justify-content: space-between;
+	display: flex;	
+	justify-content: center;
+	gap: 20px;
+}
+
+.link_logo{
+	height:60px;	
+	width: 60px;
+}
+
+.content-links-block{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	border-radius: 20px;
+	gap: 20px;
+	font-family: 'Comic Sans MS';
+	color: #FF8800;
+	background: #890022;
+    border: 1px solid #e32900;
+}
