@@ -46,6 +46,21 @@ const projects = {
 		downLink: "https://www.curseforge.com/minecraft/mc-mods/necrocraft",
 		news: "Еще в разработке!"
     },
+	
+	blackhunger: {
+        name: "The Black Hunger",
+        short: "Мод для майнкрафта",
+        description: [
+			"Мод добавляет паразита, живущего внутри носителя, который может быть как опсным так и полезным.",
+			"Находиться в разработке."
+			],
+		logo: "images/blackhunger.png",
+		linkLogo: "images/yt_logo.png",
+		linkName: "YouTube",
+		link: "https://youtube.com/@dango_rex_mine",
+		downLink: "https://www.curseforge.com/minecraft/mc-mods/blackhunger",
+		news: "Новый проект!"
+    },
 
     nix: {
         name: "NIX",
