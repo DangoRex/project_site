@@ -48,18 +48,18 @@ const projects = {
     },
 	
 	blackhunger: {
-        name: "The Black Hunger",
-        short: "Мод для майнкрафта",
+        name: "NIX",
+        short: "Голосовой помощник",
         description: [
-			"Мод добавляет паразита, живущего внутри носителя, который может быть как опсным так и полезным.",
-			"Находиться в разработке."
+			"NIX — мой голосовой помощник на Python для ПК.",
+			"В настоящее время находиться в разработке."
 			],
-		logo: "images/blackhunger.png",
-		linkLogo: "images/yt_logo.png",
-		linkName: "YouTube",
-		link: "https://youtube.com/@dango_rex_mine",
-		downLink: "https://www.curseforge.com/minecraft/mc-mods/blackhunger",
-		news: "Новый проект!"
+		logo: "images/nix.png",
+		linkLogo: "images/gh_logo.png",
+		linkName: "GitHub",
+		link: "https://github.com/DangoRex/Nix_File",
+		downLink: "",
+		news: "Еще в разработке!"
     },
 
     nix: {
